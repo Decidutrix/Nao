@@ -27,3 +27,8 @@ Need a party in game? Well Nao's got ya covered, all you gotta do is just use !p
 how many you need, and what you're doing. The party request will also be controlled through reactions as well and when
 the amount needed is met, the party request will close.
 ![asdasfsadasfseasdsdasd](https://github.com/user-attachments/assets/fd4a99cc-ddc0-4d9f-8463-a2c8c0453c9b)
+
+### WIKI TIME
+Nao is able to pull results of anything you need off of the [Mabinogi World Wiki](https://wiki.mabinogiworld.com/).
+For example you need to know about Alby Dungeon then you just use !wiki Alby Dungeon and you'll get your result.
+![sdagnusabndyugyyasfgfasd](https://github.com/user-attachments/assets/1d3ed64a-9db1-4378-bdd1-2f76b318719c)
