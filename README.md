@@ -18,7 +18,7 @@ who recieved a role.
 ![ausheuhwudasd](https://github.com/user-attachments/assets/1c3383f2-d4ea-4cb2-99b6-85b8f1034ef0)
 
 
-Now this is where the bot differs from other bots I've seen and used. These next few features I implemented specifically
+This is where the bot differs from other bots I've seen and used. These next few features I implemented specifically
 for this server but after looking over some of the feats, I'll be adding some of them to other bots I create in the future
 and tweaking them to adjust the need of that bot/server.
 
