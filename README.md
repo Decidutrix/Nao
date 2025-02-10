@@ -16,3 +16,14 @@ Every Discord bot is able to assign roles through reactions so because I wanted 
 want to pay a premuim I decided that I'd add that to Nao as well and thanks to self hosting I'm able to log everyone
 who recieved a role.
 ![ausheuhwudasd](https://github.com/user-attachments/assets/1c3383f2-d4ea-4cb2-99b6-85b8f1034ef0)
+
+
+Now this is where the bot differs from other bots I've seen and used. These next few features I implemented specifically
+for this server but after looking over some of the feats I'll be adding some of them to other bots I create in the future
+and tweaking them to adjust the need of that bot/server.
+
+### Party Board System
+Need a party in game? Well Nao's got ya covered, all you gotta do is just use !partyup and then list your party's name,
+how many you need, and what you're doing. The party request will also be controlled through reactions as well and when
+the amount needed is met, the party request will close.
+![asdasfsadasfseasdsdasd](https://github.com/user-attachments/assets/fd4a99cc-ddc0-4d9f-8463-a2c8c0453c9b)
