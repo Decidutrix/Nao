@@ -19,7 +19,7 @@ who recieved a role.
 
 
 Now this is where the bot differs from other bots I've seen and used. These next few features I implemented specifically
-for this server but after looking over some of the feats I'll be adding some of them to other bots I create in the future
+for this server but after looking over some of the feats, I'll be adding some of them to other bots I create in the future
 and tweaking them to adjust the need of that bot/server.
 
 ### Party Board System
