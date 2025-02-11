@@ -84,25 +84,46 @@ async def search_mabinogi_wiki(query):
     """
 
     try:
-        # Format the query from URL
-        formatted_query = query.replace(" ", "_")
-        url = f"https://wiki.mabinogiworld.com/view/{formatted_query}"
+        variations = [
+            query,
+            query.title(),
+            query.split()[0]
+        ]
 
-        # Send a request to Mabi Wiki
-        response = requests.get(url)
-        response.raise_for_status()
+        for variation in variations:
+            # Format the query for URL
+            formatted_query = variation.replace(" ", "_")
+            url = f"https://wiki.mabinogiworld.com/view/{formatted_query}"
 
-        # Parse the HTML content
-        soup = BeautifulSoup(response.text, "html.parser")
+            # Send a request to Mabi Wiki
+            response = requests.get(url)
 
-        # Extract title of page
-        title = soup.find("h1", id="firstHeading").text.strip()
+            # Check http status codes
+            if response.status_code == 200:
+                # Parse the HTML content
+                soup = BeautifulSoup(response.text, "html.parser")
 
-        contents = soup.find("div", class_="mw-parser-output")
-        if contents:
-            return f"**{title}**\n{url}"
-        else:
-            return f"No content found."
+                # Extract title of page
+                title = soup.find("h1", id="firstHeading").text.strip()
+
+                contents = soup.find("div", class_="mw-parser-output")
+
+                if contents:
+                    return f"**{title}**\n{url}"
+            
+            elif response.status_code != 404:
+                # raise for more descriptive error
+                raise Exception(f"MabiWiki seems to be having problems: {response.status_code} / {url}")
+            elif response.status_code == 404
+                # couldn't find variation
+                continue
+            else:
+                # this block should never execute
+                return "How did you get here, Milletian? Peeking where you shouldn't be? Some secrets are for the gods."
+
+            #last resort
+            return f"Sorry, I couldn't find what you were looking for. Nothing was found on MabiWiki for {query}"
+
     except Exception as e:
         return f"An error occurred: {str(e)}"   
 
